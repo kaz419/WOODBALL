@@ -49,6 +49,36 @@ const translations = {
   "about.stat2.suffix": { ja: "店舗+", en: "+", th: "+" },
   "about.stat3.suffix": { ja: "+", en: "+", th: "+" },
 
+  // --- Owner Profile ---
+  "owner.label": { ja: "OWNER", en: "OWNER", th: "OWNER" },
+  "owner.title": { ja: "オーナー紹介", en: "Meet the Owner", th: "แนะนำเจ้าของ" },
+  "owner.name": { ja: "とっぴー", en: "Toppie", th: "Toppie" },
+  "owner.realname": { ja: "後藤 俊行", en: "Toshiyuki Goto", th: "โทชิยูกิ โกโตะ" },
+  "owner.title.text": {
+    ja: "KARAOKE BAR ウッドボール オーナー",
+    en: "Owner, KARAOKE BAR WOOD BALL",
+    th: "เจ้าของ KARAOKE BAR WOOD BALL"
+  },
+  "owner.bio1": {
+    ja: "1975年静岡市葵区生まれ。大学から石川県金沢市へ行き、バーを8年経営。その後、雑貨屋経営3年。仕入れ先としてタイと出会う。バンコク在住20年。",
+    en: "Born in Shizuoka in 1975. Moved to Kanazawa for university and ran a bar for 8 years, followed by 3 years managing a general store. Discovered Thailand through business sourcing. Living in Bangkok for over 20 years.",
+    th: "เกิดที่ชิซึโอกะ ปี 1975 ย้ายไปคานาซาวะเพื่อเรียนมหาวิทยาลัย เปิดบาร์ 8 ปี จากนั้นบริหารร้านค้า 3 ปี ค้นพบประเทศไทยผ่านธุรกิจ อาศัยอยู่ในกรุงเทพมากกว่า 20 ปี"
+  },
+  "owner.bio2": {
+    ja: "2013年4月1日公開のタイ映画「クーカム」に脇役で出演。ICHITAN green tea等、TVCM多数出演。タイのすべての民放TVに過去多数出演経験あり。G-DIARYに鬼嫁日記を掲載（現在休刊）。HIUメンバー。",
+    en: "Appeared in the Thai film \"Khu Kam\" (2013). Featured in numerous Thai TV commercials including ICHITAN Green Tea. Has appeared on all Thai commercial TV networks. Published \"Oniyome Diary\" in G-DIARY magazine. HIU member.",
+    th: "แสดงในภาพยนตร์ไทย \"คู่กรรม\" (2013) ออกโฆษณาทีวีไทยหลายรายการรวมถึง ICHITAN Green Tea เคยออกทีวีช่องฟรีทีวีทุกช่อง ตีพิมพ์ \"Oniyome Diary\" ในนิตยสาร G-DIARY สมาชิก HIU"
+  },
+  "owner.bio3": {
+    ja: "たまにブログに出てくるオリくんは8歳の息子、ラムちゃんはタイ人妻です。ウッドボール各店に曜日毎に出勤してます。",
+    en: "Ori-kun, who sometimes appears on the blog, is his 8-year-old son. Ram-chan is his Thai wife. Toppie visits each Wood Ball location on a weekly rotation.",
+    th: "โอริคุงที่บางครั้งปรากฏในบล็อก เป็นลูกชายวัย 8 ขวบ ราม-จังเป็นภรรยาชาวไทย Toppie ไปเยี่ยมแต่ละสาขาของ Wood Ball ตามรอบสัปดาห์"
+  },
+  "owner.tag.movie": { ja: "🎬 タイ映画出演", en: "🎬 Thai Film Actor", th: "🎬 แสดงภาพยนตร์ไทย" },
+  "owner.tag.tv": { ja: "📺 TVCM多数", en: "📺 TV Commercials", th: "📺 โฆษณาทีวีหลายรายการ" },
+  "owner.tag.bangkok": { ja: "🇹🇭 バンコク在住20年", en: "🇹🇭 20+ Years in Bangkok", th: "🇹🇭 อยู่กรุงเทพ 20+ ปี" },
+  "owner.tag.hiu": { ja: "💡 HIUメンバー", en: "💡 HIU Member", th: "💡 สมาชิก HIU" },
+
   // --- Stores ---
   "stores.label": { ja: "OUR STORES", en: "OUR STORES", th: "OUR STORES" },
   "stores.title": { ja: "店舗一覧", en: "Our Stores", th: "สาขาของเรา" },
