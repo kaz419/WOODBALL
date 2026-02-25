@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAR WOOD BALL | バンコクのカラオケバー ウッドボール</title>
+  <meta name="description" content="バンコクで愛されるカラオケバー WOOD BALL。トンロー、プロンポン、タニヤなど複数店舗を展開。最高の夜をお過ごしください。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo"><img src="Photo/logo.png" alt="WOOD BALL" class="loader-logo-img"></div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="Photo/logo.png" alt="WOOD BALL" class="nav-logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active" data-i18n="nav.home">HOME</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="nav.about">ABOUT</a></li>
+        <li><a href="#stores" class="nav-link" data-i18n="nav.stores">STORES</a></li>
+        <li><a href="#menu" class="nav-link" data-i18n="nav.menu">MENU</a></li>
+        <li><a href="#schedule" class="nav-link" data-i18n="nav.schedule">SCHEDULE</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">CONTACT</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="ja">JA</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="th">TH</button>
+      </div>
+      <div class="nav-hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-links">
+      <li><a href="#hero" class="mobile-link" data-i18n="nav.home">HOME</a></li>
+      <li><a href="#about" class="mobile-link" data-i18n="nav.about">ABOUT</a></li>
+      <li><a href="#stores" class="mobile-link" data-i18n="nav.stores">STORES</a></li>
+      <li><a href="#menu" class="mobile-link" data-i18n="nav.menu">MENU</a></li>
+      <li><a href="#schedule" class="mobile-link" data-i18n="nav.schedule">SCHEDULE</a></li>
+      <li><a href="#contact" class="mobile-link" data-i18n="nav.contact">CONTACT</a></li>
+    </ul>
+    <div class="mobile-lang-switcher">
+      <button class="lang-btn active" data-lang="ja">JA</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="th">TH</button>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="section hero">
+    <div class="hero-bg">
+      <img src="images/header.jpg" alt="" class="hero-bg-img">
+      <div class="hero-overlay"></div>
+      <div class="hero-particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-logo fade-up">
+        <img src="Photo/logo.png" alt="WOOD BALL KARAOKE BAR" class="hero-logo-img">
+      </div>
+      <h1 class="sr-only">WOOD BALL KARAOKE BAR</h1>
+      <div class="hero-divider fade-up delay-2"></div>
+      <p class="hero-desc fade-up delay-3" data-i18n="hero.desc">バンコクで最高の夜を。<br>2009年創業、変わらないおもてなしの心。</p>
+      <a href="#about" class="hero-btn fade-up delay-4">
+        <span data-i18n="hero.explore">EXPLORE</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label fade-up" data-i18n="about.label">ABOUT US</span>
+        <h2 class="section-title fade-up delay-1" data-i18n="about.title">ウッドボールについて</h2>
+        <div class="section-line fade-up delay-2"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image fade-up">
+          <div class="about-img-wrapper">
+            <img src="images/thonglor-interior.jpg" alt="ウッドボール店内" class="about-img">
+          </div>
+          <div class="about-img-accent"></div>
+        </div>
+        <div class="about-text fade-up delay-1">
+          <h3 class="about-heading" data-i18n="about.heading">バンコクで愛され続ける<br>カラオケバー</h3>
+          <p class="about-desc" data-i18n="about.desc1">
+            KARAOKE BAR ウッドボールは、タイ・バンコクを拠点に複数店舗を展開するカラオケバーです。
+            2009年の創業以来、オーナーのとっぴーがバンコクでお客様に最高の夜を提供し続けています。
+          </p>
+          <p class="about-desc" data-i18n="about.desc2">
+            トンロー、プロンポン、タニヤをはじめ、パタヤ、シラチャ、そして日本の盛岡にも店舗を構え、
+            どこでも変わらない「ウッドボール品質」のおもてなしをお届けします。
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="20">0</span><span class="stat-suffix" data-i18n="about.stat1.suffix">年+</span>
+              <span class="stat-label" data-i18n="about.stat1">バンコク在住</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="6">0</span><span class="stat-suffix" data-i18n="about.stat2.suffix">店舗+</span>
+              <span class="stat-label" data-i18n="about.stat2">タイ国内展開</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="10000">0</span><span class="stat-suffix" data-i18n="about.stat3.suffix">+</span>
+              <span class="stat-label" data-i18n="about.stat3">お客様の笑顔</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stores Section -->
+  <section id="stores" class="section stores">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label fade-up" data-i18n="stores.label">OUR STORES</span>
+        <h2 class="section-title fade-up delay-1" data-i18n="stores.title">店舗一覧</h2>
+        <div class="section-line fade-up delay-2"></div>
+      </div>
+      <div class="stores-filter fade-up">
+        <button class="filter-btn active" data-filter="all" data-i18n="stores.filter.all">ALL</button>
+        <button class="filter-btn" data-filter="woodball" data-i18n="stores.filter.woodball">WOOD BALL</button>
+        <button class="filter-btn" data-filter="group" data-i18n="stores.filter.group">グループ店</button>
+      </div>
+      <div class="stores-grid">
+        <!-- Wood Ball stores -->
+        <div class="store-card fade-up" data-category="woodball"
+             data-map="WOOD BALL Thonglor 2 Sukhumvit Soi53 Bangkok"
+             data-address="2 Sukhumvit Soi 53, Bangkok"
+             data-hours="18:00 - 02:00"
+             data-phone="02-662-4549">
+          <div class="store-img">
+            <img src="images/thonglor-exterior.jpg" alt="トンロー店" class="store-card-img">
+            <div class="store-overlay">
+              <span class="store-badge">FLAGSHIP</span>
+            </div>
+          </div>
+          <div class="store-info">
+            <h3 data-i18n="store.thonglor">ウッドボール トンロー店</h3>
+            <p class="store-area" data-i18n="store.thonglor.area">📍 スクンビット Soi 53</p>
+            <p class="store-hours" data-i18n="store.thonglor.hours">🕐 18:00 - 02:00</p>
+            <p class="store-map-hint" data-i18n="store.map.hint">▶ 地図を見る</p>
+          </div>
+        </div>
+
+        <div class="store-card fade-up" data-category="woodball"
+             data-map="WOOD BALL Phrom Phong Sukhumvit Soi22 Bangkok"
+             data-address="Sukhumvit Soi 22, Bangkok"
+             data-hours="18:00 - 01:00">
+          <div class="store-img">
+            <img src="images/header.jpg" alt="プロンポン店" class="store-card-img">
+          </div>
+          <div class="store-info">
+            <h3 data-i18n="store.prompong">ウッドボール プロンポン店</h3>
+            <p class="store-area" data-i18n="store.prompong.area">📍 スクンビット Soi 22</p>
+            <p class="store-hours" data-i18n="store.hours">🕐 18:00 - 01:00</p>
+            <p class="store-map-hint" data-i18n="store.map.hint">▶ 地図を見る</p>
+          </div>
+        </div>
+
+        <div class="store-card fade-up" data-category="woodball"
+             data-map="WOOD BALL Taniya Road Silom Bangkok"
+             data-address="Taniya Road, Silom, Bangkok"
+             data-hours="18:00 - 01:00">
+          <div class="store-img">
+            <img src="images/bar2.jpg" alt="タニヤ店" class="store-card-img">
+          </div>
+          <div class="store-info">
+            <h3 data-i18n="store.taniya">ウッドボール タニヤ店</h3>
+            <p class="store-area" data-i18n="store.taniya.area">📍 タニヤ通り</p>
+            <p class="store-hours" data-i18n="store.hours">🕐 18:00 - 01:00</p>
+            <p class="store-map-hint" data-i18n="store.map.hint">▶ 地図を見る</p>
+          </div>
+        </div>
+
+        <div class="store-card fade-up" data-category="woodball"
+             data-map="94/7 Walking Street Pattaya"
+             data-address="94/7 Moo 10, Walking Street, Pattaya"
+             data-hours="18:00 - 04:00"
+             data-phone="033-132-288">
+          <div class="store-img">
+            <img src="images/pattaya.jpg" alt="パタヤビーチ店" class="store-card-img">
+          </div>
+          <div class="store-info">
+            <h3 data-i18n="store.pattaya">ウッドボール パタヤビーチ店</h3>
+            <p class="store-area" data-i18n="store.pattaya.area">📍 ウォーキングストリート, パタヤ</p>
+            <p class="store-hours" data-i18n="store.pattaya.hours">🕐 18:00 - 04:00</p>
+            <p class="store-map-hint" data-i18n="store.map.hint">▶ 地図を見る</p>
+          </div>
+        </div>
+
+        <div class="store-card fade-up" data-category="woodball"
+             data-map="24 Si Racha Nakhon 5 Sriracha"
+             data-address="24 Si Racha Nakhon 5 Rd, Sriracha"
+             data-hours="18:00 - Late"
+             data-phone="033-008-328">
+          <div class="store-img">
+            <img src="images/thonglor-led.png" alt="シラチャ店" class="store-card-img">
+          </div>
+          <div class="store-info">
+            <h3 data-i18n="store.sriracha">ウッドボール シラチャ店</h3>
+            <p class="store-area" data-i18n="store.sriracha.area">📍 シラチャ ナコン5通り</p>
+            <p class="store-hours" data-i18n="store.sriracha.hours">🕐 18:00 - Late</p>
+            <p class="store-map-hint" data-i18n="store.map.hint">▶ 地図を見る</p>
+          </div>
+        </div>
+
+        <div class="store-card fade-up" data-category="woodball"
+             data-map="WOOD BALL Morioka Iwate Japan"
+             data-address="岩手県盛岡市"
+             data-hours="19:00 - 02:00">
+          <div class="store-img">
+            <img src="images/drinks.jpg" alt="盛岡店" class="store-card-img">
+          </div>
+          <div class="store-info">
+            <h3 data-i18n="store.morioka">ウッドボール 盛岡店</h3>
+            <p class="store-area" data-i18n="store.morioka.area">📍 岩手県盛岡市</p>
+            <p class="store-hours" data-i18n="store.morioka.hours">🕐 19:00 - 02:00</p>
+            <p class="store-map-hint" data-i18n="store.map.hint">▶ 地図を見る</p>
+          </div>
+        </div>
+
+        <!-- Group stores -->
+        <div class="store-card fade-up" data-category="group"
+             data-map="The Roof Bar Diner Bangkok Thonglor"
+             data-address="Bangkok"
+             data-hours="17:00 - 00:00">
+          <div class="store-img">
+            <img src="images/thonglor-interior.jpg" alt="The Roof" class="store-card-img">
+          </div>
+          <div class="store-info">
+            <h3 data-i18n="store.roof">The Roof Bar & Diner</h3>
+            <p class="store-area" data-i18n="store.roof.area">📍 バンコク</p>
+            <p class="store-hours" data-i18n="store.roof.hours">🕐 17:00 - 00:00</p>
+            <p class="store-map-hint" data-i18n="store.map.hint">▶ 地図を見る</p>
+          </div>
+        </div>
+
+        <div class="store-card fade-up" data-category="group"
+             data-map="Orion Snack Bar 2/3 Sukhumvit Soi53 Bangkok"
+             data-address="2/3 Sukhumvit Soi 53, Bangkok"
+             data-hours="18:00 - 02:00">
+          <div class="store-img">
+            <img src="images/karaoke.jpg" alt="オリオン" class="store-card-img">
+          </div>
+          <div class="store-info">
+            <h3 data-i18n="store.orion">オリオンスナックバー</h3>
+            <p class="store-area" data-i18n="store.orion.area">📍 スクンビット Soi 53</p>
+            <p class="store-hours" data-i18n="store.orion.hours">🕐 18:00 - 02:00</p>
+            <p class="store-map-hint" data-i18n="store.map.hint">▶ 地図を見る</p>
+          </div>
+        </div>
+
+        <div class="store-card fade-up" data-category="group"
+             data-map="深夜食堂 1051 Sukhumvit Soi55 Bangkok"
+             data-address="1051 Sukhumvit Soi 55, Bangkok"
+             data-hours="17:00 - 06:00"
+             data-phone="099-227-5300">
+          <div class="store-img">
+            <img src="images/interior2.jpg" alt="深夜食堂" class="store-card-img">
+          </div>
+          <div class="store-info">
+            <h3 data-i18n="store.shinya">深夜食堂 バンコク店</h3>
+            <p class="store-area" data-i18n="store.shinya.area">📍 スクンビット Soi 55</p>
+            <p class="store-hours" data-i18n="store.shinya.hours">🕐 17:00 - 06:00</p>
+            <p class="store-map-hint" data-i18n="store.map.hint">▶ 地図を見る</p>
+          </div>
+        </div>
+
+        <div class="store-card fade-up" data-category="group"
+             data-map="おでん青葉 2/6 Sukhumvit Soi53 Bangkok"
+             data-address="2/6 Sukhumvit Soi 53, Bangkok"
+             data-hours="17:00 - 03:00"
+             data-phone="02-070-4649">
+          <div class="store-img">
+            <img src="images/shizuoka-event.jpg" alt="おでん青葉" class="store-card-img">
+          </div>
+          <div class="store-info">
+            <h3 data-i18n="store.aoba">おでん青葉</h3>
+            <p class="store-area" data-i18n="store.aoba.area">📍 スクンビット Soi 53</p>
+            <p class="store-hours" data-i18n="store.aoba.hours">🕐 17:00 - 03:00</p>
+            <p class="store-map-hint" data-i18n="store.map.hint">▶ 地図を見る</p>
+          </div>
+        </div>
+
+        <div class="store-card fade-up" data-category="group"
+             data-map="七星ラーメン Sriracha"
+             data-address="Sriracha, Chonburi"
+             data-hours="11:00 - 22:00">
+          <div class="store-img">
+            <img src="images/bar1.jpg" alt="七星ラーメン" class="store-card-img">
+          </div>
+          <div class="store-info">
+            <h3 data-i18n="store.nanahoshi">七星ラーメン シラチャ店</h3>
+            <p class="store-area" data-i18n="store.nanahoshi.area">📍 シラチャ</p>
+            <p class="store-hours" data-i18n="store.nanahoshi.hours">🕐 11:00 - 22:00</p>
+            <p class="store-map-hint" data-i18n="store.map.hint">▶ 地図を見る</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="section menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label fade-up" data-i18n="menu.label">OUR MENU</span>
+        <h2 class="section-title fade-up delay-1" data-i18n="menu.title">メニュー</h2>
+        <div class="section-line fade-up delay-2"></div>
+      </div>
+
+      <div class="menu-tabs fade-up">
+        <button class="menu-tab active" data-tab="drinks" data-i18n="menu.tab.drinks">DRINKS</button>
+        <button class="menu-tab" data-tab="food" data-i18n="menu.tab.food">FOOD</button>
+        <button class="menu-tab" data-tab="karaoke" data-i18n="menu.tab.karaoke">KARAOKE</button>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-content active" id="tab-drinks">
+        <div class="menu-grid">
+          <div class="menu-category fade-up">
+            <h3 class="menu-cat-title">
+              <span class="cat-icon">🍺</span>
+              <span data-i18n="menu.beer">ビール / BEER</span>
+            </h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.singha">シンハー（生）</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">150 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.chang">チャーン（生）</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">150 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.asahi">アサヒスーパードライ</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">200 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.heineken">ハイネケン</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">180 THB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-category fade-up">
+            <h3 class="menu-cat-title">
+              <span class="cat-icon">🥃</span>
+              <span data-i18n="menu.whisky">ウイスキー / WHISKY</span>
+            </h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.kaku">角ハイボール</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">180 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.jack">ジャックダニエル</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">220 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.mekhong">メコンウイスキー（ボトル）</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">800 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.nikka">ニッカフロンティア</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">250 THB</span>
+                </div>
+                <span class="item-badge">NEW</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-category fade-up">
+            <h3 class="menu-cat-title">
+              <span class="cat-icon">🍸</span>
+              <span data-i18n="menu.cocktail">カクテル / COCKTAIL</span>
+            </h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.gin">ジントニック</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">200 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.mojito">モヒート</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">220 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.cassis">カシスオレンジ</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">200 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.special">ウッドボールスペシャル</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">280 THB</span>
+                </div>
+                <span class="item-badge">POPULAR</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-category fade-up">
+            <h3 class="menu-cat-title">
+              <span class="cat-icon">🍶</span>
+              <span data-i18n="menu.sake">焼酎・日本酒 / SHOCHU & SAKE</span>
+            </h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.imo">芋焼酎（グラス）</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">180 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.mugi">麦焼酎（グラス）</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">180 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.nihonshu">日本酒（冷/熱燗）</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">200 THB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food -->
+      <div class="menu-content" id="tab-food">
+        <div class="menu-grid">
+          <div class="menu-category fade-up">
+            <h3 class="menu-cat-title">
+              <span class="cat-icon">🍖</span>
+              <span data-i18n="menu.snacks">おつまみ / SNACKS</span>
+            </h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.edamame">枝豆</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">120 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.fries">フライドポテト</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">150 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.karaage">鶏の唐揚げ</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">180 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.somtam">ソムタム</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">140 THB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-category fade-up">
+            <h3 class="menu-cat-title">
+              <span class="cat-icon">🍜</span>
+              <span data-i18n="menu.food">フード / FOOD</span>
+            </h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.padthai">パッタイ</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">160 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.kaopad">カオパッド（チャーハン）</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">150 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.yakisoba">焼きそば</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">160 THB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Karaoke -->
+      <div class="menu-content" id="tab-karaoke">
+        <div class="menu-grid">
+          <div class="menu-category fade-up">
+            <h3 class="menu-cat-title">
+              <span class="cat-icon">🎤</span>
+              <span data-i18n="menu.karaoke.title">カラオケ料金 / KARAOKE</span>
+            </h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.karaoke.free">カラオケ歌い放題（1時間）</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price" data-i18n="menu.karaoke.free.price">無料</span>
+                </div>
+                <span class="item-note" data-i18n="menu.karaoke.note">※ ワンドリンクオーダー制</span>
+              </div>
+            </div>
+            <p class="menu-note" data-i18n="menu.karaoke.desc">
+              ※ 日本語・タイ語・英語の楽曲を多数ご用意しております。<br>
+              ※ 最新曲も随時追加中！
+            </p>
+          </div>
+
+          <div class="menu-category fade-up">
+            <h3 class="menu-cat-title">
+              <span class="cat-icon">🎉</span>
+              <span data-i18n="menu.party">パーティープラン / PARTY</span>
+            </h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.nomihoudai">飲み放題（2時間）</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price">800 THB</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <span class="item-name" data-i18n="menu.private">貸切プラン</span>
+                  <span class="item-dots"></span>
+                  <span class="item-price" data-i18n="menu.private.price">要相談</span>
+                </div>
+              </div>
+            </div>
+            <p class="menu-note" data-i18n="menu.party.desc">
+              ※ 歓送迎会、誕生日パーティー、各種イベントに対応いたします。<br>
+              ※ 詳細はお気軽にお問い合わせください。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p class="menu-disclaimer fade-up" data-i18n="menu.disclaimer">※ 価格はすべて参考価格です。店舗により異なる場合がございます。</p>
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule" class="section schedule">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label fade-up" data-i18n="schedule.label">SCHEDULE</span>
+        <h2 class="section-title fade-up delay-1" data-i18n="schedule.title">出勤スケジュール</h2>
+        <div class="section-line fade-up delay-2"></div>
+      </div>
+      <p class="schedule-desc fade-up" data-i18n="schedule.desc">オーナー とっぴーの出勤スケジュール</p>
+      <p class="schedule-period fade-up" data-i18n="schedule.period">📅 2025年2月24日〜3月31日</p>
+      <div class="schedule-grid fade-up">
+        <div class="schedule-day">
+          <div class="day-name" data-i18n="schedule.mon">月曜</div>
+          <div class="day-store" data-i18n="schedule.mon.store">シラチャ店<br>22時頃〜</div>
+        </div>
+        <div class="schedule-day">
+          <div class="day-name" data-i18n="schedule.tue">火曜</div>
+          <div class="day-store" data-i18n="schedule.tue.store">パタヤ店<br>22時頃〜</div>
+        </div>
+        <div class="schedule-day off">
+          <div class="day-name" data-i18n="schedule.wed">水曜</div>
+          <div class="day-store" data-i18n="schedule.wed.store">―</div>
+        </div>
+        <div class="schedule-day">
+          <div class="day-name" data-i18n="schedule.thu">木曜</div>
+          <div class="day-store" data-i18n="schedule.thu.store">トンロー店<br>＋オリオン<br>22時頃〜</div>
+        </div>
+        <div class="schedule-day">
+          <div class="day-name" data-i18n="schedule.fri">金曜</div>
+          <div class="day-store" data-i18n="schedule.fri.store">トンロー店<br>22時頃〜</div>
+        </div>
+        <div class="schedule-day off">
+          <div class="day-name" data-i18n="schedule.sat">土曜</div>
+          <div class="day-store" data-i18n="schedule.sat.store">OFF</div>
+        </div>
+        <div class="schedule-day off">
+          <div class="day-name" data-i18n="schedule.sun">日曜</div>
+          <div class="day-store" data-i18n="schedule.sun.store">OFF</div>
+        </div>
+      </div>
+      <p class="schedule-note fade-up" data-i18n="schedule.note">※ スケジュールは変更になる場合がございます。最新情報はSNSをご確認ください。</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label fade-up" data-i18n="contact.label">CONTACT</span>
+        <h2 class="section-title fade-up delay-1" data-i18n="contact.title">お問い合わせ</h2>
+        <div class="section-line fade-up delay-2"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info fade-up">
+          <h3 data-i18n="contact.heading">お気軽にご連絡ください</h3>
+          <p data-i18n="contact.desc">ご予約・貸切パーティー・イベントのご相談など、お気軽にお問い合わせください。</p>
+          <div class="contact-methods">
+            <a href="tel:026624549" class="contact-method">
+              <div class="method-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <strong data-i18n="contact.phone">電話</strong>
+                <span>02-662-4549</span>
+              </div>
+            </a>
+            <a href="#" class="contact-method">
+              <div class="method-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.74.45 3.38 1.24 4.81L2 22l5.19-1.24A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm.02 17.5c-1.63 0-3.14-.45-4.46-1.21l-.32-.19-3.08.74.74-3.08-.2-.33A7.46 7.46 0 014.5 12c0-4.14 3.36-7.5 7.5-7.5S19.5 7.86 19.5 12s-3.36 7.5-7.48 7.5z"/></svg>
+              </div>
+              <div>
+                <strong>LINE</strong>
+                <span>@woodball</span>
+              </div>
+            </a>
+            <a href="#" class="contact-method">
+              <div class="method-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div>
+                <strong>Instagram</strong>
+                <span>@barwoodball</span>
+              </div>
+            </a>
+            <a href="#" class="contact-method">
+              <div class="method-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              </div>
+              <div>
+                <strong>Facebook</strong>
+                <span>BAR WOOD BALL</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper fade-up delay-1">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name" data-i18n="contact.form.name">お名前</label>
+              <input type="text" id="name" name="name" required placeholder="山田 太郎" data-i18n-placeholder="contact.form.name.placeholder">
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="contact.form.email">メールアドレス</label>
+              <input type="email" id="email" name="email" required placeholder="example@email.com">
+            </div>
+            <div class="form-group">
+              <label for="store" data-i18n="contact.form.store">店舗</label>
+              <select id="store" name="store">
+                <option value="" data-i18n="contact.form.store.placeholder">店舗をお選びください</option>
+                <option value="thonglor" data-i18n="contact.store.thonglor">トンロー店</option>
+                <option value="prompong" data-i18n="contact.store.prompong">プロンポン店</option>
+                <option value="taniya" data-i18n="contact.store.taniya">タニヤ店</option>
+                <option value="pattaya" data-i18n="contact.store.pattaya">パタヤビーチ店</option>
+                <option value="sriracha" data-i18n="contact.store.sriracha">シラチャ店</option>
+                <option value="morioka" data-i18n="contact.store.morioka">盛岡店</option>
+                <option value="other" data-i18n="contact.store.other">その他</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="contact.form.message">メッセージ</label>
+              <textarea id="message" name="message" rows="5" required placeholder="ご予約・お問い合わせ内容をご記入ください" data-i18n-placeholder="contact.form.message.placeholder"></textarea>
+            </div>
+            <button type="submit" class="form-submit">
+              <span data-i18n="contact.form.submit">送信する</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store Map Modal -->
+  <div class="store-modal" id="storeModal">
+    <div class="store-modal-overlay" id="storeModalOverlay"></div>
+    <div class="store-modal-content">
+      <button class="store-modal-close" id="storeModalClose">&times;</button>
+      <h3 class="store-modal-name" id="storeModalName"></h3>
+      <div class="store-modal-map" id="storeModalMap"></div>
+      <div class="store-modal-details">
+        <div class="store-modal-detail" id="storeModalAddress"></div>
+        <div class="store-modal-detail" id="storeModalHours"></div>
+        <div class="store-modal-detail" id="storeModalPhone"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="Photo/logo.png" alt="WOOD BALL" class="footer-logo-img">
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>NAVIGATION</h4>
+            <a href="#hero">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#stores">STORES</a>
+          </div>
+          <div class="footer-col">
+            <h4>&nbsp;</h4>
+            <a href="#menu">MENU</a>
+            <a href="#schedule">SCHEDULE</a>
+            <a href="#contact">CONTACT</a>
+          </div>
+          <div class="footer-col">
+            <h4>SOCIAL</h4>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">LINE</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">&copy; 2025 BAR WOOD BALL. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
