@@ -11,6 +11,7 @@ const translations = {
   "nav.menu": { ja: "MENU", en: "MENU", th: "MENU" },
   "nav.schedule": { ja: "SCHEDULE", en: "SCHEDULE", th: "SCHEDULE" },
   "nav.contact": { ja: "CONTACT", en: "CONTACT", th: "CONTACT" },
+  "nav.blog": { ja: "BLOG", en: "BLOG", th: "BLOG" },
 
   // --- Hero ---
   "hero.desc": {

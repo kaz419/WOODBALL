@@ -223,6 +223,18 @@ ul { list-style: none; }
   width: 20px;
 }
 
+/* Blog Nav Link - Gold accent */
+.nav-blog {
+  color: var(--gold) !important;
+  font-weight: 500;
+}
+.nav-blog::after {
+  background: var(--gold) !important;
+}
+.nav-blog:hover {
+  color: var(--gold-light) !important;
+}
+
 /* Language Switcher */
 .lang-switcher {
   display: flex;
@@ -1406,6 +1418,14 @@ ul { list-style: none; }
 
 .footer-col a:hover {
   color: var(--blue-primary);
+}
+
+.footer-blog-link {
+  color: var(--gold) !important;
+  font-weight: 500 !important;
+}
+.footer-blog-link:hover {
+  color: var(--gold-light) !important;
 }
 
 .footer-bottom {
