@@ -4,6 +4,16 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // --- Blog URL Configuration ---
+  // Change this to '/blog/' for production (Cloudflare subdirectory)
+  const BLOG_URL = 'https://preformationary-amie-voluptuously.ngrok-free.dev';
+  document.querySelectorAll('.blog-card, .blog-cta-btn, .footer-blog-link').forEach(el => {
+    if (el.getAttribute('href') === '/blog/') {
+      el.setAttribute('href', BLOG_URL);
+      el.setAttribute('target', '_blank');
+    }
+  });
+
   // --- Loader ---
   const loader = document.getElementById('loader');
   window.addEventListener('load', () => {

@@ -13,6 +13,38 @@ const translations = {
   "nav.contact": { ja: "CONTACT", en: "CONTACT", th: "CONTACT" },
   "nav.blog": { ja: "BLOG", en: "BLOG", th: "BLOG" },
 
+  // --- Blog Section ---
+  "blog.label": { ja: "BLOG", en: "BLOG", th: "BLOG" },
+  "blog.title": {
+    ja: "最新ブログ記事",
+    en: "Latest Blog Posts",
+    th: "บล็อกล่าสุด"
+  },
+  "blog.desc": {
+    ja: "店主とっぴーが綴る、バンコクのグルメ・イベント情報をお届けします。",
+    en: "Restaurant reviews, event info & Bangkok life by owner Toppii.",
+    th: "เจ้าของร้าน Toppii นำเสนอข้อมูลอาหารและอีเวนต์ในกรุงเทพ"
+  },
+  "blog.cat1.title": { ja: "グルメ日記", en: "Food Diary", th: "ไดอารี่อาหาร" },
+  "blog.cat1.desc": {
+    ja: "バンコク・パタヤ・シラチャのレストラン探訪レポート",
+    en: "Restaurant reviews in Bangkok, Pattaya & Sriracha",
+    th: "รีวิวร้านอาหารในกรุงเทพ พัทยา และศรีราชา"
+  },
+  "blog.cat2.title": { ja: "イベント情報", en: "Events", th: "อีเวนต์" },
+  "blog.cat2.desc": {
+    ja: "ウッドボール各店のイベント・プロモーション情報",
+    en: "Events & promotions at all Woodball locations",
+    th: "อีเวนต์และโปรโมชั่นของ Woodball ทุกสาขา"
+  },
+  "blog.cat3.title": { ja: "バンコク生活", en: "Bangkok Life", th: "ชีวิตในกรุงเทพ" },
+  "blog.cat3.desc": {
+    ja: "タイ在住16年の店主が伝える、リアルなバンコク情報",
+    en: "Real Bangkok info from an owner with 16 years in Thailand",
+    th: "ข้อมูลกรุงเทพจริงๆ จากเจ้าของร้านที่อยู่ไทย 16 ปี"
+  },
+  "blog.cta": { ja: "ブログを読む", en: "Read Blog", th: "อ่านบล็อก" },
+
   // --- Hero ---
   "hero.desc": {
     ja: "バンコクで最高の夜を。<br>2009年創業、変わらないおもてなしの心。",

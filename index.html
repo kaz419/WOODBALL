@@ -33,7 +33,7 @@
         <li><a href="#menu" class="nav-link" data-i18n="nav.menu">MENU</a></li>
         <li><a href="#schedule" class="nav-link" data-i18n="nav.schedule">SCHEDULE</a></li>
         <li><a href="#contact" class="nav-link" data-i18n="nav.contact">CONTACT</a></li>
-        <li><a href="/blog/" class="nav-link nav-blog" data-i18n="nav.blog" id="blogLink">BLOG</a></li>
+        <li><a href="#blog" class="nav-link nav-blog" data-i18n="nav.blog" id="blogLink">BLOG</a></li>
       </ul>
       <div class="lang-switcher">
         <button class="lang-btn active" data-lang="ja">JA</button>
@@ -57,7 +57,7 @@
       <li><a href="#menu" class="mobile-link" data-i18n="nav.menu">MENU</a></li>
       <li><a href="#schedule" class="mobile-link" data-i18n="nav.schedule">SCHEDULE</a></li>
       <li><a href="#contact" class="mobile-link" data-i18n="nav.contact">CONTACT</a></li>
-      <li><a href="/blog/" class="mobile-link" data-i18n="nav.blog" id="blogLinkMobile">BLOG</a></li>
+      <li><a href="#blog" class="mobile-link nav-blog" data-i18n="nav.blog" id="blogLinkMobile">BLOG</a></li>
     </ul>
     <div class="mobile-lang-switcher">
       <button class="lang-btn active" data-lang="ja">JA</button>
@@ -789,6 +789,43 @@
             </button>
           </form>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="section blog-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label fade-up" data-i18n="blog.label">BLOG</span>
+        <h2 class="section-title fade-up delay-1" data-i18n="blog.title">最新ブログ記事</h2>
+        <div class="section-line fade-up delay-2"></div>
+      </div>
+      <p class="blog-section-desc fade-up delay-2" data-i18n="blog.desc">店主とっぴーが綴る、バンコクのグルメ・イベント情報をお届けします。</p>
+
+      <div class="blog-cards">
+        <a href="/blog/" class="blog-card fade-up delay-2">
+          <div class="blog-card-icon">🍜</div>
+          <h3 data-i18n="blog.cat1.title">グルメ日記</h3>
+          <p data-i18n="blog.cat1.desc">バンコク・パタヤ・シラチャのレストラン探訪レポート</p>
+        </a>
+        <a href="/blog/" class="blog-card fade-up delay-3">
+          <div class="blog-card-icon">🎤</div>
+          <h3 data-i18n="blog.cat2.title">イベント情報</h3>
+          <p data-i18n="blog.cat2.desc">ウッドボール各店のイベント・プロモーション情報</p>
+        </a>
+        <a href="/blog/" class="blog-card fade-up delay-4">
+          <div class="blog-card-icon">🇹🇭</div>
+          <h3 data-i18n="blog.cat3.title">バンコク生活</h3>
+          <p data-i18n="blog.cat3.desc">タイ在住16年の店主が伝える、リアルなバンコク情報</p>
+        </a>
+      </div>
+
+      <div class="blog-cta fade-up delay-4">
+        <a href="/blog/" class="blog-cta-btn" id="blogCta">
+          <span data-i18n="blog.cta">ブログを読む</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
     </div>
   </section>
